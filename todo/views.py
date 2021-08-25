@@ -17,6 +17,7 @@ class TodoCreate(CreateView):
     template_name = 'create.html'
     model = TodoModel
     fields = ('title', 'memo', 'priority', 'duedate')
+    #fields = ('内容', 'メモ', '優先度', '期日')
     success_url = reverse_lazy('list')
 
 
@@ -29,4 +30,5 @@ class TodoUpdate(UpdateView):
     template_name = 'update.html'
     model = TodoModel
     fields = ('title', 'memo', 'priority', 'duedate')
+    #fields = ('内容', 'メモ', '優先度', '期日')
     success_url = reverse_lazy('list')
